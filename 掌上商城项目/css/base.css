@@ -1,0 +1,50 @@
+/*reset css*/
+*,::before,::after{
+	margin: 0;padding: 0;
+	-webkit-tap-highlight-color: transparent;/*清除移动端默认的点击高量效果*/
+	/*设置所有的都是以边框开始计算宽度 百分比*/
+	-webkit-box-sizing: border-box;box-sizing: border-box;
+}
+body{
+	font-size: 14px;color: #333;
+	font-family: "microsoft yahei",sans-serif;/*设置默认字体*/
+}
+a{color: #333;text-decoration: none;}
+a:hover{text-decoration: none;}
+ul,ol{list-style: none;}
+input{border: none;outline: none;
+		-webkit-appearance: none;/*清楚移动端默认的表单样式*/
+}
+/*common css*/
+.f_left{float: left;}
+.f_right{float: right;}
+.clearfix::before,.clearfix::after{
+	content: "";height: 0;line-height: 0;
+	display: block;visibility: hidden;clear: both;
+}
+[class^="icon_"]{
+	background:url(../images/sprits_btm_new.png)no-repeat;
+	background-size: 200px 200px;
+}
+.m_110{margin-left: 10px;}
+.m_r10{margin-right: 10px;}
+.m_b10{margin-bottom: 10px;}
+.m_t10{margin-top: 10px;}
+/*定义顶部通栏*/
+.hm_topBar{width: 100%;height: 45px;position: absolute;
+		background:url(../images/header-bg.png)repeat-x;
+		background-size: 1px 44px;border-bottom: 1px solid #ccc;
+		}
+.hm_topBar>[class^="icon_"]{
+	position: absolute;top: 0;
+	height: 44px;width: 40px;padding: 12px 10px;
+	background-clip: content-box;/*设置背景从什么位置 开始显示*/
+	background-origin: content-box;/*开始定位的位置*/
+}
+.hm_topBar>.icon_back{left: 0;background-position: -20px 0;}
+.hm_topBar>.icon_menu{right: 0;background-position: -60px 0;}
+.hm_topBar>form{width: 100%;height: 44px;padding: 0 40px;}
+.hm_topBar>form>input{width: 100%;border: 1px solid #e0e0e0;
+			border-radius: 4px;height: 30px;margin-top: 7px;
+					}
+.hm_topBar>h3{text-align: center;line-height: 44px;font-weight: normal;}
